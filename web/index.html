@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vitamin Deficiency Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Vitamin Deficiency Detector</h1>
+        <div class="button-container">
+            <input type="file" id="fileInput" webkitdirectory directory multiple>
+            <button onclick="uploadDataset()">Upload Dataset</button>
+            <button onclick="dataPreprocessing()">Data Preprocessing</button>
+            <button onclick="runSVM()">Run Existed SVM Algorithm</button>
+            <button onclick="runCNN()">Run Proposed CNN Algorithm</button>
+            <button onclick="predictDeficiency()">Vitamin Deficiency from test image</button>
+        </div>
+        <div id="output"></div>
+    </div>
+    <script src="scrip.js"></script>
+</body>
+
+</html>
